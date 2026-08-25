@@ -1,0 +1,275 @@
+{
+  "schema_version": "1.0",
+  "project": {
+    "id": "test-next-import",
+    "name": "NEXT Import Test",
+    "description": "Comprehensive test project for verifying the NEXT import system",
+    "status": "active",
+    "target_date": null,
+    "milestones": [
+      {
+        "id": "test-ms-design",
+        "title": "Design phase complete",
+        "status": "todo",
+        "target_date": null,
+        "position": 1
+      },
+      {
+        "id": "test-ms-launch",
+        "title": "Public launch",
+        "status": "todo",
+        "target_date": "2026-12-01",
+        "position": 2
+      }
+    ],
+    "workstreams": [
+      {
+        "id": "test-ws-design",
+        "name": "Design",
+        "description": "All design work for the project",
+        "position": 1,
+        "stages": [
+          {
+            "id": "test-ws-design-research",
+            "name": "Research",
+            "position": 1,
+            "tasks": [
+              {
+                "id": "test-task-01",
+                "title": "User interviews",
+                "description": "Conduct 10 user interviews to validate assumptions",
+                "status": "done",
+                "priority": "high",
+                "size": "M",
+                "position": 1,
+                "subtasks": [
+                  { "id": "test-st-01a", "title": "Recruit participants", "status": "done" },
+                  { "id": "test-st-01b", "title": "Prepare interview script", "status": "done" }
+                ]
+              },
+              {
+                "id": "test-task-02",
+                "title": "Competitive analysis",
+                "description": null,
+                "status": "done",
+                "priority": "medium",
+                "size": "S",
+                "position": 2
+              }
+            ]
+          },
+          {
+            "id": "test-ws-design-ui",
+            "name": "UI Design",
+            "position": 2,
+            "tasks": [
+              {
+                "id": "test-task-03",
+                "title": "Design system tokens",
+                "description": "Define colors, typography, spacing",
+                "status": "done",
+                "priority": "high",
+                "size": "L",
+                "position": 1,
+                "subtasks": [
+                  { "id": "test-st-03a", "title": "Color palette", "status": "done" },
+                  { "id": "test-st-03b", "title": "Typography scale", "status": "done" }
+                ]
+              },
+              {
+                "id": "test-task-04",
+                "title": "Wireframe key screens",
+                "status": "in_progress",
+                "priority": "high",
+                "size": "M",
+                "position": 2
+              },
+              {
+                "id": "test-task-05",
+                "title": "High-fidelity mockups",
+                "status": "todo",
+                "priority": "medium",
+                "size": "L",
+                "position": 3,
+                "dependencies": ["test-task-04"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "test-ws-engineering",
+        "name": "Engineering",
+        "description": "Development and technical implementation",
+        "position": 2,
+        "stages": [
+          {
+            "id": "test-ws-eng-setup",
+            "name": "Setup",
+            "position": 1,
+            "tasks": [
+              {
+                "id": "test-task-06",
+                "title": "Repository setup",
+                "status": "done",
+                "priority": "high",
+                "size": "S",
+                "position": 1
+              },
+              {
+                "id": "test-task-07",
+                "title": "CI/CD pipeline",
+                "status": "done",
+                "priority": "medium",
+                "size": "M",
+                "position": 2,
+                "dependencies": ["test-task-06"]
+              }
+            ]
+          },
+          {
+            "id": "test-ws-eng-features",
+            "name": "Features",
+            "position": 2,
+            "tasks": [
+              {
+                "id": "test-task-08",
+                "title": "Authentication system",
+                "status": "done",
+                "priority": "high",
+                "size": "L",
+                "position": 1
+              },
+              {
+                "id": "test-task-09",
+                "title": "Dashboard API",
+                "status": "in_progress",
+                "priority": "high",
+                "size": "M",
+                "position": 2,
+                "dependencies": ["test-task-08"]
+              },
+              {
+                "id": "test-task-10",
+                "title": "Real-time notifications",
+                "status": "todo",
+                "priority": "medium",
+                "size": "L",
+                "position": 3,
+                "dependencies": ["test-task-09"]
+              },
+              {
+                "id": "test-task-11",
+                "title": "Data export feature",
+                "status": "todo",
+                "priority": "low",
+                "size": "S",
+                "position": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "test-ws-launch",
+        "name": "Launch",
+        "description": "Pre-launch preparation and go-live",
+        "position": 3,
+        "stages": [
+          {
+            "id": "test-ws-launch-testing",
+            "name": "Testing",
+            "position": 1,
+            "tasks": [
+              {
+                "id": "test-task-12",
+                "title": "Unit tests",
+                "status": "todo",
+                "priority": "high",
+                "size": "M",
+                "position": 1
+              },
+              {
+                "id": "test-task-13",
+                "title": "Integration tests",
+                "status": "todo",
+                "priority": "high",
+                "size": "L",
+                "position": 2,
+                "dependencies": ["test-task-12"]
+              },
+              {
+                "id": "test-task-14",
+                "title": "Performance testing",
+                "status": "todo",
+                "priority": "medium",
+                "size": "M",
+                "position": 3
+              },
+              {
+                "id": "test-task-15",
+                "title": "Security audit",
+                "status": "blocked",
+                "priority": "high",
+                "size": "M",
+                "position": 4
+              }
+            ]
+          },
+          {
+            "id": "test-ws-launch-deploy",
+            "name": "Deployment",
+            "position": 2,
+            "tasks": [
+              {
+                "id": "test-task-16",
+                "title": "Staging environment",
+                "status": "todo",
+                "priority": "medium",
+                "size": "M",
+                "position": 1
+              },
+              {
+                "id": "test-task-17",
+                "title": "Production deployment",
+                "status": "todo",
+                "priority": "high",
+                "size": "L",
+                "position": 2,
+                "dependencies": ["test-task-16"]
+              },
+              {
+                "id": "test-task-18",
+                "title": "DNS and SSL setup",
+                "status": "todo",
+                "priority": "medium",
+                "size": "S",
+                "position": 3
+              },
+              {
+                "id": "test-task-19",
+                "title": "Monitoring setup",
+                "status": "todo",
+                "priority": "medium",
+                "size": "S",
+                "position": 4
+              },
+              {
+                "id": "test-task-20",
+                "title": "Launch checklist",
+                "status": "todo",
+                "priority": "high",
+                "size": "M",
+                "position": 5,
+                "dependencies": ["test-task-17", "test-task-18", "test-task-19"],
+                "subtasks": [
+                  { "id": "test-st-20a", "title": "Verify all tests pass", "status": "todo" }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
