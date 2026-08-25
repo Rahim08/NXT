@@ -17,12 +17,12 @@ export function MobileNav() {
   const { t } = useI18n();
 
   return (
-    <nav className="lg:hidden fixed bottom-0 left-0 right-0 z-30 bg-surface/80 dark:bg-surface/90 backdrop-blur-xl border-t border-border/50">
-      {/* Content height: ~49pt per iOS HIG, padding for safe area */}
-      <div
-        className="flex items-stretch justify-around h-[49px] px-1"
-        style={{ paddingBottom: "env(safe-area-inset-bottom, 0px)" }}
-      >
+    <nav
+      className="lg:hidden fixed bottom-0 left-0 right-0 z-30 bg-surface/80 dark:bg-surface/90 backdrop-blur-xl border-t border-border/50"
+      style={{ paddingBottom: "env(safe-area-inset-bottom, 0px)" }}
+    >
+      {/* Content height: ~49pt per iOS HIG. Safe area padding is on the nav, not inside content. */}
+      <div className="flex items-stretch justify-around h-[49px] px-1">
         {navItems.map((item) => {
           const isActive =
             item.path === "/"

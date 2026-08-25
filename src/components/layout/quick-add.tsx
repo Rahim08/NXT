@@ -101,7 +101,7 @@ export function QuickAdd() {
       {/* Positioned above tab bar: bottom = 49px (tab height) + safe-area-inset-bottom + 16px gap */}
       <button
         onClick={() => setShowMenu(!showMenu)}
-        className={`lg:hidden fixed right-5 w-[52px] h-[52px] rounded-full shadow-lg flex items-center justify-center z-40 active:scale-95 transition-all ${
+        className={`lg:hidden fixed right-5 w-[45px] h-[45px] rounded-full shadow-lg flex items-center justify-center z-40 active:scale-95 transition-all ${
           showMenu
             ? "bg-text-secondary text-text-inverse rotate-45"
             : "bg-accent text-text-inverse hover:bg-accent-hover shadow-accent/30"
@@ -111,7 +111,7 @@ export function QuickAdd() {
         }}
         aria-label={t.common.quickAdd}
       >
-        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
+        <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
         </svg>
       </button>
