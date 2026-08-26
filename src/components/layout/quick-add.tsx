@@ -101,7 +101,7 @@ export function QuickAdd() {
       {/* Positioned above tab bar: bottom = 49px (tab height) + safe-area-inset-bottom + 16px gap */}
       <button
         onClick={() => setShowMenu(!showMenu)}
-        className={`lg:hidden fixed right-5 w-[45px] h-[45px] rounded-full shadow-lg flex items-center justify-center z-40 active:scale-95 transition-all ${
+        className={`lg:hidden fixed right-5 w-[45px] h-[45px] rounded-full shadow-lg flex items-center justify-center z-40 pointer-events-auto active:scale-95 transition-all ${
           showMenu
             ? "bg-text-secondary text-text-inverse rotate-45"
             : "bg-accent text-text-inverse hover:bg-accent-hover shadow-accent/30"
@@ -118,7 +118,7 @@ export function QuickAdd() {
 
       {/* ── Mobile action menu ── */}
       {showMenu && (
-        <div className="lg:hidden fixed inset-0 z-50 flex items-end">
+        <div className="lg:hidden fixed inset-0 z-50 flex items-end pointer-events-auto">
           <div
             className="absolute inset-0 bg-black/40"
             onClick={() => {
@@ -192,7 +192,7 @@ export function QuickAdd() {
 
       {/* ── Mobile quick task sheet ── */}
       {isOpen && (
-        <div className="lg:hidden fixed inset-0 z-50 flex items-end">
+        <div className="lg:hidden fixed inset-0 z-50 flex items-end pointer-events-auto">
           <div
             className="absolute inset-0 bg-black/40"
             onClick={() => {

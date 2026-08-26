@@ -127,8 +127,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Smooth transitions for theme changes */
-* {
+/* Smooth transitions for theme changes — only on elements that explicitly opt in */
+html, body, .dark {
   transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
 }
 

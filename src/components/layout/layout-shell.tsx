@@ -45,7 +45,7 @@ export function LayoutShell({ children }: { children: React.ReactNode }) {
         <MobileNav />
 
         {/* Quick Add — desktop inline + mobile FAB */}
-        <div className="lg:fixed lg:bottom-8 lg:right-8 lg:w-80 lg:z-40">
+        <div className="lg:fixed lg:bottom-8 lg:right-8 lg:w-80 lg:z-40 pointer-events-none">
           <QuickAdd />
         </div>
 

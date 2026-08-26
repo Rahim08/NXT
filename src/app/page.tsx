@@ -106,7 +106,7 @@ export default function Home() {
               })}
             </p>
           </div>
-          <div className="flex items-center gap-2 shrink-0">
+          <div className="flex items-center gap-2 shrink-0 relative z-10">
             {/* Search icon — mobile only */}
             <button
               onClick={openSearch}
